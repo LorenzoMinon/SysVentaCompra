@@ -81,6 +81,7 @@
             this.txtdocumento.Name = "txtdocumento";
             this.txtdocumento.Size = new System.Drawing.Size(192, 20);
             this.txtdocumento.TabIndex = 3;
+            this.txtdocumento.TextChanged += new System.EventHandler(this.txtdocumento_TextChanged);
             // 
             // txtclave
             // 
@@ -89,6 +90,7 @@
             this.txtclave.PasswordChar = '*';
             this.txtclave.Size = new System.Drawing.Size(192, 20);
             this.txtclave.TabIndex = 4;
+            this.txtclave.TextChanged += new System.EventHandler(this.txtclave_TextChanged);
             // 
             // label3
             // 
