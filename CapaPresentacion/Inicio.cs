@@ -16,13 +16,16 @@ namespace CapaPresentacion
 {
     public partial class Inicio : Form
     {
-        private static Usuario usuarioactual;
+        private static Usuario usuarioActual;
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
-        public Inicio(Usuario objusuario)
+        public Inicio(Usuario objusuario = null)
         {
-            usuarioactual = objusuario;
+            if (objusuario == null)
+                usuarioActual = new Usuario() {NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 };
+            else
+            usuarioActual = objusuario;
 
             InitializeComponent();
         }
@@ -31,7 +34,7 @@ namespace CapaPresentacion
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-            List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioactual.IdUsuario);
+            List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);
 
             foreach (IconMenuItem iconMenu in menu.Items)
             {
@@ -42,7 +45,7 @@ namespace CapaPresentacion
                 }
             }
 
-            lblusuario.Text = usuarioactual.NombreCompleto;
+            lblusuario.Text = usuarioActual.NombreCompleto;
         }
 
 
