@@ -102,7 +102,8 @@ namespace CapaPresentacion
                     txtcodproducto.BackColor = Color.DarkOliveGreen;
                     txtidproducto.Text = oProducto.IdProducto.ToString();
                     txtproducto.Text = oProducto.Nombre;
-                    txtpreciocompra.Select(); 
+                    txtprecioventa.Text = oProducto.PrecioVenta.ToString("0.00");
+                    txtcantidad.Select();
                 }
                 else
                 {

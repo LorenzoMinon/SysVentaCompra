@@ -51,6 +51,7 @@
     <Compile Include="CD_Proveedor.cs" />
     <Compile Include="CD_Usuario.cs" />
     <Compile Include="CD_Rol.cs" />
+    <Compile Include="CD_Venta.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

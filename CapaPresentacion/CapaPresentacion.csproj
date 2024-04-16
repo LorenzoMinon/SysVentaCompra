@@ -214,6 +214,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modales\mdCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modales\mdCliente.Designer.cs">
+      <DependentUpon>mdCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modales\mdProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     <EmbeddedResource Include="frmDetalleCompra.resx">
       <DependentUpon>frmDetalleCompra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleVenta.resx">
+      <DependentUpon>frmDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNegocio.resx">
       <DependentUpon>frmNegocio.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modales\mdCliente.resx">
+      <DependentUpon>mdCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modales\mdProducto.resx">
       <DependentUpon>mdProducto.cs</DependentUpon>
@@ -322,6 +334,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PlantillaCompra.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlantillaVenta.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
