@@ -104,6 +104,7 @@
             this.txtfechainicio.Name = "txtfechainicio";
             this.txtfechainicio.Size = new System.Drawing.Size(97, 20);
             this.txtfechainicio.TabIndex = 207;
+            this.txtfechainicio.Value = new System.DateTime(2024, 2, 24, 11, 6, 0, 0);
             // 
             // label4
             // 
@@ -142,6 +143,7 @@
             this.btnbuscarresultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscarresultado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnbuscarresultado.UseVisualStyleBackColor = true;
+            this.btnbuscarresultado.Click += new System.EventHandler(this.btnbuscarresultado_Click);
             // 
             // cboproveedor
             // 
@@ -317,6 +319,7 @@
             this.btnexportar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnexportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnexportar.UseVisualStyleBackColor = false;
+            this.btnexportar.Click += new System.EventHandler(this.btnexportar_Click);
             // 
             // btnbuscar
             // 
@@ -334,6 +337,7 @@
             this.btnbuscar.Size = new System.Drawing.Size(42, 23);
             this.btnbuscar.TabIndex = 221;
             this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // btnlimpiarbuscador
             // 
@@ -352,6 +356,7 @@
             this.btnlimpiarbuscador.TabIndex = 222;
             this.btnlimpiarbuscador.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlimpiarbuscador.UseVisualStyleBackColor = false;
+            this.btnlimpiarbuscador.Click += new System.EventHandler(this.btnlimpiarbuscador_Click);
             // 
             // txtbusqueda
             // 

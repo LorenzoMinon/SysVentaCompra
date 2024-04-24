@@ -53,8 +53,8 @@ namespace CapaPresentacion
             List<ReporteCompra> lista = new List<ReporteCompra>();
 
             lista = new CN_Reporte().Compra(
-                txtfechainicio.Value.ToString(),
-                txtfechafin.Value.ToString(),
+                txtfechainicio.Value.ToString("dd/MM/yyyy"),
+                txtfechafin.Value.ToString("dd/MM/yyyy"),
                 idproveedor
                 );
 
@@ -176,5 +176,6 @@ namespace CapaPresentacion
                 row.Visible = true;
             }
         }
+
     }
 }
